@@ -21,5 +21,3 @@ const TodoListItem = ( { todo, onRemove, onToggle } ) => {
     </div>
   );
 };
-
-export default TodoListItem;
