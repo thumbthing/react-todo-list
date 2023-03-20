@@ -1,8 +1,11 @@
-.TodoListItem {
+.TodoListItem-virtualized {
   padding: 1rem;
   display: flex;
   align-items: center;
- 
+
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
   &:nth-child(even) {
     background: #f8f9fa;
   }
@@ -10,7 +13,7 @@
   .checkbox {
     cursor: pointer; 
     flex: 1;
-    display: flex1;
+    display: flex;
     align-items: center;
     svg {
       font-size: 1.5rem;
@@ -42,7 +45,4 @@
     };
   }
 
-  & + & {
-    border-top: 1px solid #dee2e6;
-  }
 }
